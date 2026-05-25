@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../assets/imgs/background.webp);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.scrolling {
+  position: relative;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  width: 100vw;
+  height: 95vh;
+  z-index: 5;
+  overflow: hidden;
+  animation: all 1s;
+  background: transparent;
+  opacity: 1;
+}
+
+.scrolling_item {
+  font-weight: 700;
+  position: absolute;
+  white-space: nowrap;
+  /* color: rgba(0, 38, 69, 0.7); */
+  font-family: "shangshouxingyu";
+  text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.8);
+  isolation: auto;
+}
+
+.scrolling_item a {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+.scrolling_item a:hover {
+  color: rgba(255, 99, 71, 0.8);
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  font-size: 24px;
+  margin: 0 20px;
+}
+
+a:hover {
+  color: #ff6347;
+  /* Change to your desired hover color */
+}
+
+.imgs {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  overflow: hidden;
+  /* z-index: 5; */
+
+  img {
+    width: 52%;
+  }
+}
+
+.tree1 {
+  position: absolute;
+  top: -51%;
+  left: -17%;
+  transform: rotate(163deg);
+}
+
+.tree2 {
+  position: absolute;
+  top: -31%;
+  right: -24%;
+  transform: rotate(240deg);
+}
+
+.tree3 {
+  position: absolute;
+  bottom: -43%;
+  left: -25%;
+  transform: rotate(59deg);
+}
+
+.tree4 {
+  position: absolute;
+  bottom: -46%;
+  right: -17%;
+  transform: rotate(344deg);
+}
+
+.roll {
+  width: 1700px;
+  height: 1800px;
+  position: absolute;
+  top: 40vh;
+  /* border: 1px solid #000; */
+  transform-origin: center calc(50% + 50px);
+  rotate: 100deg;
+  /* animation: roll 6s linear forwards 1s; */
+  z-index: 15;
+}
+
+.roll-animate {
+  animation: roll 4s ease-in-out forwards;
+}
+
+@keyframes roll {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  80% {
+    transform: rotate(-120deg);
+  }
+
+  100% {
+    transform: rotate(-100deg);
+  }
+}
+
+.bg {
+  width: 100%;
+  height: 100%;
+  background-image: url(../assets/imgs/home/roll.png);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  z-index: 15;
+}
+
+.bg .tab {
+  width: 14%;
+  height: 6%;
+  background-image: url(../assets/imgs/home/btn.png);
+  background-size: 100% 100%;
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: auto;
+}
+
+.bg.tab a {
+  transition: 0.5s;
+}
+
+.bg .tab:hover a {
+  color: #ffd700;
+  font-size: 2.8rem;
+}
+
+.bg a {
+  font-family: "fangfang";
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #f7e8c7;
+}
+
+.bg .origin {
+  position: absolute;
+  top: 4.5%;
+  left: 15%;
+
+  transform: rotate(-33deg);
+}
+
+.bg .coexistence {
+  position: absolute;
+  top: -3%;
+  left: 51.5%;
+  transform: translateX(-50%);
+  /* z-index: 2; */
+}
+
+.bg .wish {
+  background-image: url(../assets/imgs/home/btn.png);
+  position: absolute;
+  top: 4.5%;
+  right: 12%;
+  transform: rotate(34deg);
+}

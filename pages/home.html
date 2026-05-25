@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="stylesheet" href="../styles/home.css">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="scrolling"></div>
+    <div class="imgs">
+        <img src="../assets/imgs/home/tree3.png" alt="" class="tree1">
+        <img src="../assets/imgs/home/tree2.png" alt="" class="tree2">
+        <img src="../assets/imgs/home/tree4.png" alt="" class="tree3">
+        <img src="../assets/imgs/home/tree1.png" alt="" class="tree4">
+
+    </div>
+    <div class="roll">
+        <div class="bg">
+            <div class="origin tab">
+                <a href="./origin.html">宁·安康</a>
+            </div>
+            <div class="coexistence tab">
+                <a href="./coexistence.html">和·共生</a>
+            </div>
+            <div class="wish tab">
+                <a href="./wish.html">续·文脉</a>
+            </div>
+        </div>
+        <script src="../js/home-danmu.js"></script>
+        <script>
+            const roll = document.querySelector('.roll');
+            window.addEventListener('load', () => {
+                roll.classList.add('roll-animate');
+            });
+
+
+        </script>
+
+</body>
+
+</html>

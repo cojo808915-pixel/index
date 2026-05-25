@@ -1,0 +1,145 @@
+/* Chrome、Safari隐藏滚动条 */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* 自定义滚动条样式 */
+footer::-webkit-scrollbar {
+  display: block;
+  height: 1rem;
+  /* 调整滚动条高度 */
+}
+
+footer::-webkit-scrollbar-track {
+  background: #137c41;
+  border-radius: 8px;
+  margin: 0 35rem;
+  /* 添加左右边距 调整长度 */
+}
+
+footer::-webkit-scrollbar-thumb {
+  background: #f3e46c;
+  border-radius: 8px;
+}
+
+footer::-webkit-scrollbar-thumb:hover {
+  background: #e6d45c;
+  /* 添加悬停效果 */
+}
+
+.detail-container {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url('../assets/imgs/background.webp');
+  background-size: contain;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.svg-1 {
+  width: 100%;
+  position: absolute;
+  bottom: 1rem;
+}
+
+.svg-1 svg {
+  width: 100%;
+}
+
+.cloud-1 {
+  position: absolute;
+  left: 20%;
+  top: 10%;
+}
+
+.cloud-2 {
+  position: absolute;
+  left: 5%;
+  top: 40%;
+}
+
+.cloud-3 {
+  position: absolute;
+  right: 5%;
+  top: 30%;
+}
+
+.detail-container-inner {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  bottom: 3rem;
+  height: 30vh;
+  overflow: hidden;
+}
+
+.plow-container {
+  position: relative;
+  z-index: 10;
+  height: 65vh;
+}
+
+footer {
+  overflow-y: hidden;
+  overflow-x: scroll;
+  width: 100%;
+  display: flex;
+  position: relative;
+  z-index: 20;
+  padding-bottom: 1rem;
+}
+
+footer>span {
+  margin-right: 2rem;
+  /* me-8 */
+  flex: 0 0 12.5rem;
+  /* 固定宽度，不允许缩放 */
+  /* overflow: hidden; */
+}
+
+footer>span>p {
+  font-family: 'PingFang-SC-Semibold';
+  font-size: 1.8rem;
+  line-height: 144%;
+  letter-spacing: -1.1%;
+  color: #6b401d;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+.footer-img-container {
+  overflow: hidden;
+  width: 100%;
+}
+
+footer img {
+  height: 12rem;
+  scale: 1.6;
+  transform: translate(10%, -14%);
+  cursor: pointer;
+}
+
+.footer-img-container:hover {
+  scale: 0.9;
+}
+
+/* .scroll-flat {
+  width: 100%;
+  margin-top: 1rem;
+}
+.scroll-container {
+  width: 753px;
+  height: 12px;
+  border-radius: 8px;
+  background-color: #137c41;
+  margin: 0 auto;
+}
+.scroll-bar {
+  width: 323px;
+  height: 12px;
+  border-radius: 8px;
+  background-color: #e6be50;
+  cursor: pointer;
+} */
