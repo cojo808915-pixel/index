@@ -352,8 +352,16 @@ h5+span {
   width: 100%;
 }
 
-.text-color {
-  color: #137c41;
+.text-color1 {
+  color: rgba(70, 166, 255, 1);
+}
+
+.text-color2 {
+  color: rgba(255, 92, 96, 1);
+}
+
+.text-color3 {
+  color: rgba(255, 120, 61, 1);
 }
 
 .plow-container>svg {
@@ -412,7 +420,7 @@ h5+span {
   font-family: FZ;
   font-weight: 400;
   font-size: 46px;
-  color: #137c41;
+  color: rgba(254, 153, 8, 1);
   text-shadow: 0px 4px 16px rgba(255, 255, 255, 1);
 }
 
