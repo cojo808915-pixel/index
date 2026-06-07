@@ -34,23 +34,24 @@ body {
   padding: 1rem 3rem 1rem;
 }
 
+.title-right {
+  right: 0;
+  width: 82%;
+}
+
 .title-full {
   left: 0;
   right: 0;
   width: auto;
 }
 
-.title-right {
-  right: 0;
-}
-
 .title-time {
   width: 18%;
   background-color: #A97C19;
   right: 0;
-  padding: 1rem;
+  padding: 1rem 0.5rem;
   color: #A97C19;
-  font-size: 4.5rem;
+  font-size: 2.5rem;
   letter-spacing: 0%;
   text-align: center;
   font-family: fangfang;
@@ -58,11 +59,22 @@ body {
 
 .title-time-left {
   left: 0;
+  right: auto;
+  margin-right: 2rem;
+}
+
+.title-right {
+  right: 1rem;
+  left: 21%;
+  width: auto;
+  padding: 1rem 2rem;
 }
 
 .title-time p {
   background-color: #f9eac9;
-  padding-bottom: 1rem;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  margin: 0 0.5rem;
 }
 
 .title-time img {
@@ -110,8 +122,8 @@ h5,
 }
 
 h1 {
-  font-size: 10rem;
-  letter-spacing: 17%;
+  font-size: 8rem;
+  letter-spacing: 10%;
 }
 
 .description {
@@ -145,6 +157,14 @@ h1 {
 
 .detail-left {
   position: relative;
+  font-size: 2.2rem;
+  display: inline-block;
+  width: 64%;
+  float: left;
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .call {
@@ -168,10 +188,25 @@ h1 {
 
 .talk {
   border: 11px solid #A97C19;
-  width: 31%;
+  width: 33%;
   font-family: fangfang;
-  position: absolute;
-  right: 0;
+  float: right;
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.talk-image {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.talk-image img {
+  width: 80%;
+  height: auto;
+  object-fit: contain;
 }
 
 .point {
@@ -211,6 +246,7 @@ h1 {
   border: 11px solid #A97C19;
   display: flex;
   margin-bottom: 8rem;
+  margin-top: 8rem;
 }
 
 .no-margin {
@@ -225,13 +261,14 @@ h1 {
 .people {
   width: 100%;
   font-family: fangfang;
-  font-size: 50px;
-  line-height: 100%;
-  padding-bottom: 1.5rem;
+  font-size: 3.5rem;
+  line-height: 120%;
+  padding: 1rem;
   letter-spacing: 7%;
   background-color: #A97C19;
   color: #f9eac9;
   text-align: center;
+  margin-bottom: 0;
 }
 
 .weathear {
