@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,114 +10,183 @@
   <script defer src="../../../js/papers.js"></script>
   <style>
     body {
-    width: 100%;
-    background-image: url('../../../assets/imgs/background.webp');
-    background-size: contain;
-    background-position: center;
-    background-attachment: fixed;
-    padding: 10rem 8rem 10rem;
-  }
+      width: 100%;
+      background-image: url('../../../assets/imgs/background.webp');
+      background-size: contain;
+      background-position: center;
+      background-attachment: fixed;
+      padding: 10rem 8rem 10rem;
+    }
+
+    /* 让英雄不应被遗忘的背景更长 */
+    .people {
+      padding-bottom: 3rem;
+      padding-top: 1rem;
+      line-height: 120%;
+    }
+
+    /* 让第一个point（后续变化）前面空一行 */
+    .detail-left .point:first-child {
+      margin-top: 1.5em;
+    }
   </style>
 </head>
+
 <body>
   <!-- 返回 -->
   <div class="back-btn">
     <img src="../../../assets/imgs/coexistence/disater/back-btn.svg" alt="">
   </div>
   <div class="title-container">
-<div class="title title-full">
-  <!-- 大标题 -->
-   <div class="main main-center">
-    <!-- 1 -->
-    <div class="title-item">
-      <h5>HUANG</h5>
-      <h1>蝗</h1>
-    </div>
-    <!-- 2 -->
-    <div class="title-item">
-      <h5>ZAI</h5>
-      <h1>灾</h1>
-   </div>
-</div>
- <!-- 说明语段 -->
- <div class="title-description">
-  <span>大面积爆发</span><span>灾荒诱因</span><span>农民困苦</span><span>粮食歉收</span>
-</div>
- </div>
- </div>
- <!-- 号外 -->
- <div class="description">
-  <!-- 号外 -->
-   <span class="call"><p>号外!</p>
-    <div class="call-dressing">
-      <div></div><div>HAOWAI</div>
-   </div>
-  </span>
-   <span class="detail detail-size">
-    <p>&nbsp;&nbsp;&nbsp;蝗虫群体成群结队，迅速吞噬农作物叶片和嫩茎，是最具破坏力的农业虫害之一，常引发大范围粮食歉收。</p>
-    <h6 class="point">蝗灾事例:</h6>
-   <ul>
-    <li>1875–1877年丁戊奇荒蝗灾：华北地区遭遇旱灾加蝗虫爆发，蝗虫成群吞噬庄稼，造成数百万农民死亡，是中国历史上著名的大灾荒之一。</li>
-    <li>1930年代川甘蝗灾：四川、甘肃地区蝗虫肆虐，农作物被啃食殆尽，严重影响粮食生</li>
-   </ul>
-   </span>
-<div></div>
-<div></div>
-</div>
-<!-- 展示图片 -->
- <div class="display-imgs">
-  <img src="../../../assets/imgs/coexistence/disater/pest/01.png" alt="01"><img src="../../../assets/imgs/coexistence/disater/pest/02.png" alt="02">
- </div>
- <div class="title-container">
-  <div class="title title-full">
-    <!-- 大标题 -->
-     <div class="main main-center">
-      <!-- 1 -->
-      <div class="title-item">
-        <h5>DAO</h5>
-        <h1>稻</h1>
+    <div class="title title-full">
+      <!-- 大标题 -->
+      <div class="main main-center">
+        <!-- 1 -->
+        <div class="title-item">
+          <h5>MA</h5>
+          <h1>马</h1>
+        </div>
+        <!-- 2 -->
+        <div class="title-item">
+          <h5>JIU</h5>
+          <h1>厩</h1>
+        </div>
+        <!-- 3 -->
+        <div class="title-item">
+          <h5>BIAN</h5>
+          <h1>边</h1>
+        </div>
+        <!-- 4 -->
+        <div class="title-item">
+          <h5>DE</h5>
+          <h1>的</h1>
+        </div>
+        <!-- 5 -->
+        <div class="title-item">
+          <h5>WU</h5>
+          <h1>无</h1>
+        </div>
+        <!-- 6 -->
+        <div class="title-item">
+          <h5>MING</h5>
+          <h1>名</h1>
+        </div>
+        <!-- 7 -->
+        <div class="title-item">
+          <h5>YING</h5>
+          <h1>英</h1>
+        </div>
+        <!-- 8 -->
+        <div class="title-item">
+          <h5>XIONG</h5>
+          <h1>雄</h1>
+        </div>
       </div>
-      <!-- 2 -->
-      <div class="title-item">
-        <h5>FEI</h5>
-        <h1>飞</h1>
-      </div>
-      <!-- 3 -->
-      <div class="title-item">
-        <h5>SHI</h5>
-        <h1>虱</h1>
-      </div>
-     </div>
-     <!-- 说明语段 -->
+      <!-- 说明语段 -->
       <div class="title-description">
-        <span>水稻害虫</span><span>南方水稻区</span><span>饥民逃荒</span><span>减产威胁</span>
+        <span>负伤归家</span><span>十二年沉默</span><span>一只左手</span><span>自食其力</span>
       </div>
-  </div>
-   </div>
-    <div class="description">
-      <span class="detail detail-left">
-        <p>&nbsp;&nbsp;&nbsp;主要危害水稻，吸食稻株汁液并传播病毒病害，造成稻田减产，威胁水稻安全生产。</p>
-        <h6 class="point">稻飞虱事例:</h6>
-        <ul>
-          <li>1960年代南方稻飞虱大爆发：由于气候和栽培方式变化，稻飞虱传播病毒病害严重，导致部分省份水稻减产。</li>
-          <li>近年广西稻飞虱防控难题：广西地区每年均有稻飞虱灾害报道，成为当地水稻生产的常见威胁。</li>
-        </ul>
-       </span>
-      <!-- 民不聊生 -->
-       <span class="talk">
-         <p class="people">粮食歉收</p>
-         <div class="weathear">
-          <img src="../../../assets/imgs/coexistence/disater/famine/weather.svg" alt="weather">
-          <img src="../../../assets/imgs/coexistence/disater/famine/weather.svg" alt="weather">
-          <img src="../../../assets/imgs/coexistence/disater/famine/weather.svg" alt="weather">
-         </div>
-       </span>
-  <div></div>
-  <div></div>
     </div>
-    <!-- 展示图片 -->
-     <div class="display-imgs no-margin">
-      <img src="../../../assets/imgs/coexistence/disater/pest/03.png" alt="03"><img src="../../../assets/imgs/coexistence/disater/pest/04.png" alt="04">
-     </div>
+  </div>
+  <!-- 号外 -->
+  <div class="description">
+    <!-- 号外 -->
+    <span class="call">
+      <p>寻回!</p>
+      <div class="call-dressing">
+        <div></div>
+        <div>XUNHUI</div>
+      </div>
+    </span>
+    <span class="detail detail-size">
+      <h6 class="point">背景与经过:</h6>
+      <p>1963年，内蒙古赤峰。寒风中的破旧马歷旁，一位瘦弱的中年人正抱着草料劳作。同行的老指导员忽然认出了他一这正是多年未见的于水林。</p>
+      <h6 class="point">故事重点:</h6>
+      <p>他早年在前线负伤，失去右臂。回乡后没有张扬功劳，只靠一只左手干活谋生，长期住在马愿边，沉默度日。</p>
+      <h6 class="point">转折:</h6>
+      <p>这一场重逢，让这位几乎被岁月埋没的人，重新被看见。</p>
+    </span>
+    <div></div>
+    <div></div>
+  </div>
+  <!-- 展示图片 -->
+  <div class="display-imgs">
+    <img src="../../../assets/imgs/coexistence/disater/pest/01.png" alt="01"><img
+      src="../../../assets/imgs/coexistence/disater/pest/02.png" alt="02">
+  </div>
+  <div class="title-container">
+    <div class="title title-full">
+      <!-- 大标题 -->
+      <div class="main main-center">
+        <!-- 1 -->
+        <div class="title-item">
+          <h5>BEI</h5>
+          <h1>被</h1>
+        </div>
+        <!-- 2 -->
+        <div class="title-item">
+          <h5>KAN</h5>
+          <h1>看</h1>
+        </div>
+        <!-- 3 -->
+        <div class="title-item">
+          <h5>JIAN</h5>
+          <h1>见</h1>
+        </div>
+        <!-- 4 -->
+        <div class="title-item">
+          <h5>DE</h5>
+          <h1>的</h1>
+        </div>
+        <!-- 5 -->
+        <div class="title-item">
+          <h5>HOU</h5>
+          <h1>后</h1>
+        </div>
+        <!-- 6 -->
+        <div class="title-item">
+          <h5>BAN</h5>
+          <h1>半</h1>
+        </div>
+        <!-- 7 -->
+        <div class="title-item">
+          <h5>SHENG</h5>
+          <h1>生</h1>
+        </div>
+      </div>
+      <!-- 说明语段 -->
+      <div class="title-description">
+        <span>安排住房</span><span>落实照顾</span><span>成家立业</span><span>平淡生活</span>
+      </div>
+    </div>
+  </div>
+  <div class="description">
+    <span class="detail detail-left">
+
+      <h6 class="point">后续变化:</h6>
+      <p>重逢之后，相关部门帮助改善居住条件，也让他的生活重新安稳下来。后来，他有了新房，也有了家庭，日子逐渐走向平静。</p>
+      <h6 class="point">人物心声:</h6>
+      <p>他很少谈起从前，只淡淡地说:“还有左手，能干活。</p>
+      <h6 class="point">启示:</h6>
+      <p>真正的英雄，往往最沉默;真正的敬意，不只是记住，更是让付出被看见。</p>
+    </span>
+    <!-- 民不聊生 -->
+    <span class="talk">
+      <p class="people">英雄不应被遗忘</p>
+      <div class="weathear">
+        <img src="../../../assets/imgs/coexistence/disater/famine/weather.svg" alt="weather">
+        <img src="../../../assets/imgs/coexistence/disater/famine/weather.svg" alt="weather">
+        <img src="../../../assets/imgs/coexistence/disater/famine/weather.svg" alt="weather">
+      </div>
+    </span>
+    <div></div>
+    <div></div>
+  </div>
+  <!-- 展示图片 -->
+  <div class="display-imgs no-margin">
+    <img src="../../../assets/imgs/coexistence/disater/pest/03.png" alt="03"><img
+      src="../../../assets/imgs/coexistence/disater/pest/04.png" alt="04">
+  </div>
 </body>
+
 </html>
