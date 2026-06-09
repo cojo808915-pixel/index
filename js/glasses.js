@@ -34,7 +34,7 @@ FontLoader.load(
   fontBaseUrl,
   function (font) {
     // 拆分文字
-    const text = '你还记得粮荒的味道吗';
+    const text = '你还记得流浪的味道吗';
     // 需要放大的字索引（第五和第六个字，索引从0开始）
     const bigIndexes = [4, 5];
     // 每个字的大小
