@@ -159,15 +159,15 @@ body::-webkit-scrollbar {
   color: aliceblue;
 
   .green div {
-    background-color: #0b572d;
+    background-color: #67A1F8;
   }
 
   .orange div {
-    background-color: #e57e2f;
+    background-color: #F6CA60;
   }
 
   .yellowgreen div {
-    background-color: #5faa17;
+    background-color: #EBA9A9;
   }
 
   .label {
@@ -302,7 +302,7 @@ body::-webkit-scrollbar {
   }
 
   .cow {
-    width: 13%;
+    width: 7%;
     top: 33%;
     left: 60%;
   }
@@ -339,7 +339,7 @@ body::-webkit-scrollbar {
   }
 
   .line-2 {
-    width: 50%;
+    width: 40%;
     top: 40%;
     left: 0;
     z-index: -5;
