@@ -1498,23 +1498,63 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  // 为特定 SVG 添加点击事件
-  document.querySelectorAll('.text-2 svg').forEach((svg) => {
-    svg.addEventListener('click', function () {
-      // 获取当前点击的 SVG 的父元素
-      const parentElement = this.closest('.text-2');
-      if (parentElement) {
-        // 获取对应的 text-3 元素
-        const index = Array.from(document.querySelectorAll('.text-2')).indexOf(
-          parentElement
-        );
-        const text3Element = document.querySelectorAll('.text-3')[index];
+  // 小人信息数据
+  const peopleData = [
+    { name: '艾哈迈德', age: 8, story: '来自叙利亚，梦想成为一名医生，帮助受伤的人们。' },
+    { name: '玛丽亚', age: 10, story: '来自乌克兰，热爱绘画，用画笔记录战争中的希望。' },
+    { name: '哈桑', age: 7, story: '来自阿富汗，最喜欢踢足球，梦想有一天能代表国家队。' },
+    { name: '莱拉', age: 9, story: '来自也门，喜欢读书，希望能建造一座图书馆。' },
+    { name: '穆罕默德', age: 11, story: '来自巴勒斯坦，擅长数学，梦想成为工程师。' },
+    { name: '索菲亚', age: 6, story: '来自伊拉克，喜欢唱歌，歌声能让周围的人感到平静。' },
+    { name: '阿里', age: 8, story: '来自索马里，希望成为一名教师，帮助更多孩子学习。' },
+    { name: '法蒂玛', age: 10, story: '来自利比亚，热爱科学，梦想探索太空。' },
+    { name: '雅各布', age: 7, story: '来自南苏丹，喜欢种植，希望有一天能让沙漠变成绿洲。' },
+    { name: '萨拉', age: 9, story: '来自缅甸，喜欢跳舞，用舞蹈表达对和平的渴望。' },
+    { name: '大卫', age: 11, story: '来自以色列，擅长弹钢琴，希望音乐能消除隔阂。' },
+    { name: '阿米拉', age: 8, story: '来自黎巴嫩，喜欢写作，记录每一天的故事。' },
+    { name: '张明', age: 10, story: '来自中国，热爱武术，希望用力量保护他人。' },
+    { name: '田中', age: 9, story: '来自日本，喜欢茶道，希望传播和平的理念。' },
+    { name: '金秀', age: 7, story: '来自韩国，擅长跆拳道，梦想成为世界冠军。' },
+    { name: '普拉卡什', age: 11, story: '来自印度，喜欢编程，希望用技术改变世界。' },
+    { name: '迪帕克', age: 8, story: '来自尼泊尔，热爱登山，希望攀登世界最高峰。' },
+    { name: '努拉', age: 10, story: '来自沙特阿拉伯，喜欢天文学，梦想成为宇航员。' },
+    { name: '卡里姆', age: 9, story: '来自埃及，喜欢历史，希望保护古老的文化遗产。' },
+    { name: '伊莎贝拉', age: 7, story: '来自巴西，热爱足球，希望参加世界杯。' },
+    { name: '迭戈', age: 11, story: '来自墨西哥，喜欢烹饪，希望开一家餐厅。' },
+    { name: '艾玛', age: 8, story: '来自美国，喜欢画画，希望用艺术连接世界。' },
+    { name: '路易', age: 10, story: '来自法国，擅长小提琴，希望用音乐传递爱。' },
+    { name: '安娜', age: 9, story: '来自德国，喜欢阅读，希望成为一名作家。' },
+  ];
 
-        if (text3Element) {
-          // 触发 text-3 的点击事件
-          text3Element.click();
+  // 更新小人信息显示的函数
+  function updatePeopleInfo(index) {
+    const data = peopleData[index];
+    if (!data) return;
+
+    const infoPanel = document.querySelector('.people-info-panel');
+    if (infoPanel) {
+      infoPanel.innerHTML = `
+        <div class="people-name">${data.name}</div>
+        <div class="people-age">${data.age}岁</div>
+        <div class="people-story">${data.story}</div>
+      `;
+      infoPanel.style.opacity = '1';
+      infoPanel.style.transform = 'translateY(0)';
+    }
+  }
+
+  // 为小人添加点击事件
+  document.querySelectorAll('.text-2').forEach((element, index) => {
+    element.addEventListener('click', function () {
+      updatePeopleInfo(index);
+      // 高亮当前点击的小人
+      document.querySelectorAll('.text-2').forEach((el, i) => {
+        if (i === index) {
+          el.classList.add('active');
+        } else {
+          el.classList.remove('active');
         }
-      }
+      });
     });
   });
 

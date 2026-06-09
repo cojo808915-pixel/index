@@ -1,6 +1,7 @@
 * {
   transition: none;
 }
+
 .top-container {
   width: 100%;
   height: 100vh;
@@ -29,6 +30,7 @@
   display: flex;
   align-items: center;
 }
+
 .text-scroll {
   height: fit-content;
   width: 100%;
@@ -38,14 +40,17 @@
   white-space: nowrap;
   animation: scroll 40s linear infinite;
 }
+
 .text-scroll p {
   margin-left: 10rem;
 }
+
 .tv-container {
   position: relative;
   z-index: 10;
   scale: 0.9;
 }
+
 .tv-container img {
   position: relative;
   z-index: 10;
@@ -60,12 +65,14 @@
   transform: translate(-60%, -52%);
   z-index: 5;
 }
+
 video {
   scale: 1.15;
   object-fit: cover;
   width: 100%;
   height: 100%;
 }
+
 .tv-bottom {
   position: absolute;
   bottom: 2rem;
@@ -75,20 +82,25 @@ video {
   margin: 2rem 0;
   width: 90%;
 }
-.tv-bottom > svg {
+
+.tv-bottom>svg {
   position: relative;
   scale: 0.8;
   z-index: 10;
 }
+
 .tv-bottom svg:nth-child(2) {
   top: 3rem;
 }
+
 .tv-bottom svg:nth-child(3) {
   top: 6rem;
 }
+
 .tv-bottom svg:nth-child(4) {
   transform: translateY(1rem);
 }
+
 .middle-container {
   width: 100%;
   min-height: 100vh;
@@ -98,11 +110,13 @@ video {
   background-position: center;
   position: relative;
 }
+
 .plowman {
   height: 100vh;
   padding-top: 6rem;
   position: relative;
 }
+
 .plow-container {
   width: 100%;
   position: absolute;
@@ -110,6 +124,7 @@ video {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
 .accordion-content {
   width: 100%;
   transition: all 0.3s ease-out;
@@ -131,18 +146,21 @@ video {
 .accordion-content p {
   width: 70%;
 }
+
 .accordion-content h6 {
   /* margin-bottom: 0.5rem; */
   font-size: 2rem;
   margin-bottom: 1rem;
   font-family: 'PingFang-SC-Semibold';
 }
+
 .scroll-container {
   width: 100%;
   height: 100%;
   overflow-x: hidden;
   /* transform: translateY(-25%); */
 }
+
 .scroll-flat {
   font-family: fangfang;
   font-size: 10rem;
@@ -155,23 +173,28 @@ video {
   white-space: nowrap;
   animation: scroll 40s linear infinite;
 }
+
 .scroll-flat span {
   margin-right: 1rem;
   /* scale: 0.65; */
 }
+
 @keyframes scroll {
   0% {
     transform: translateX(0);
   }
+
   100% {
     transform: translateX(-100%);
   }
 }
+
 .farmer-container {
   height: 100vh;
   position: relative;
   /* padding-top:3rem ; */
 }
+
 .farmers-bg {
   position: absolute;
   bottom: 0;
@@ -180,16 +203,20 @@ video {
   display: flex;
   justify-content: flex-end;
 }
-.farmers-bg > img {
+
+.farmers-bg>img {
   width: 70%;
 }
+
 .season-container {
   width: 100%;
   height: 100vh;
 }
+
 .season-content {
   position: relative;
 }
+
 .chunk-1,
 .chunk-2,
 .chunk-3,
@@ -205,15 +232,19 @@ video {
 .chunk-1 {
   height: 0.6vh;
 }
+
 .chunk-2 {
   height: 1vh;
 }
+
 .chunk-3 {
   height: 3ch;
 }
+
 .chunk-4 {
   height: 5vh;
 }
+
 .chunk-5 {
   height: 7vh;
 }
@@ -226,6 +257,7 @@ video {
   margin-bottom: 0;
   opacity: 1;
 }
+
 /* 圆的高相关 */
 .season {
   background-color: #1e1e1e;
@@ -249,10 +281,12 @@ video {
     transform: translateY(0) translateX(0);
     opacity: 0.6;
   }
+
   50% {
     transform: translateY(-20px) translateX(10px);
     opacity: 1;
   }
+
   100% {
     transform: translateY(0) translateX(0);
     opacity: 0.6;
@@ -264,15 +298,18 @@ video {
     box-shadow: 0 0 4px #fff, 0 0 8px #fff, 0 0 12px #fff;
     opacity: 0.6;
   }
+
   50% {
     box-shadow: 0 0 8px #fff, 0 0 16px #fff, 0 0 24px #fff;
     opacity: 0.8;
   }
+
   100% {
     box-shadow: 0 0 4px #fff, 0 0 8px #fff, 0 0 12px #fff;
     opacity: 0.6;
   }
 }
+
 .wheatear-1,
 .wheatear-2 {
   position: absolute;
@@ -281,6 +318,7 @@ video {
   /* bottom: -2.5rem; */
   /* scale: 0.9; */
 }
+
 /* .wheatear-1 {
   left: -3.3rem;
 } */
@@ -303,11 +341,13 @@ video {
   right: 0;
   bottom: -0.5rem;
 }
+
 .wheatear-2 svg:nth-child(1) {
   position: absolute;
   right: 15rem;
   bottom: -0.5rem;
 }
+
 .season-circle {
   width: 740px;
   position: absolute;
@@ -316,7 +356,8 @@ video {
   left: 50%;
   transform: translate(-50%, -50%) scale(0) rotate(180deg);
   z-index: 20;
-  aspect-ratio: 1 / 1; /* 宽高比 1:1 */
+  aspect-ratio: 1 / 1;
+  /* 宽高比 1:1 */
   opacity: 0;
   transition: transform 1.5s ease-out 0.3s, opacity 1s ease-out 0.3s;
 }
@@ -325,12 +366,14 @@ video {
   transform: translate(-50%, -50%) scale(0.93) rotate(0deg);
   opacity: 1;
 }
+
 .season-circle svg {
   width: 100%;
   height: 100%;
   position: relative;
   z-index: 20;
 }
+
 .season-circle svg:nth-child(2) {
   width: 94%;
   height: 94%;
@@ -339,9 +382,11 @@ video {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
 .circle-1 {
   width: 90%;
-  aspect-ratio: 1 / 1; /* 宽高比 1:1 */
+  aspect-ratio: 1 / 1;
+  /* 宽高比 1:1 */
   background-color: #1e1e1e;
   position: absolute;
   border-radius: 50%;
@@ -349,51 +394,61 @@ video {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
 .circle-2 {
   border: 1px solid rgba(255, 255, 255, 0.35);
   border-radius: 50%;
   min-width: 578px;
-  aspect-ratio: 1 / 1; /* 宽高比 1:1 */
+  aspect-ratio: 1 / 1;
+  /* 宽高比 1:1 */
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 30;
 }
+
 .circle-3 {
-  border: 1px solid rgba(255, 255, 255, 0.35);
+  border: 3px solid rgba(255, 255, 255, 0.6);
   border-radius: 50%;
-  width: 420px;
-  aspect-ratio: 1 / 1; /* 宽高比 1:1 */
+  aspect-ratio: 1 / 1;
+  /* 宽高比 1:1 */
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) rotate(-360deg);
   transition: transform 1.5s ease-out 0.3s;
   z-index: 30;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.2), inset 0 0 30px rgba(255, 255, 255, 0.1);
 }
+
 .circle-3.visible {
   transform: translate(-50%, -50%) rotate(0deg);
 }
+
 .circle-4 {
-  border: 1px solid rgba(255, 255, 255, 0.35);
   border-radius: 50%;
-  width: 340px;
-  aspect-ratio: 1 / 1; /* 宽高比 1:1 */
+  width: 450px;
+  aspect-ratio: 1 / 1;
+  /* 宽高比 1:1 */
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 1rem;
+  padding: 1.5rem;
+
 }
+
 .circle-4 svg {
   width: 100%;
   height: 100%;
 }
+
 .text-2,
 .text-3 {
   cursor: pointer;
 }
+
 .text-1 {
   position: absolute;
   left: 50%;
@@ -413,8 +468,7 @@ video {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%) rotate(var(--angle)) translateY(-240px)
-    rotate(calc(-1 * var(--angle)));
+  transform: translate(-50%, -50%) rotate(var(--angle)) translateY(-240px) rotate(calc(-1 * var(--angle)));
   transform-origin: center;
 }
 
@@ -422,120 +476,148 @@ video {
   width: 75%;
   position: relative;
 }
+
 .text-3 {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%) rotate(var(--angle)) translateY(-190px);
+  transform: translate(-50%, -50%) rotate(var(--angle)) translateY(-260px);
   transform-origin: center;
   white-space: nowrap;
   color: #cdcdcd;
   font-family: fangfang;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   line-height: 150%;
   letter-spacing: -1.1%;
   z-index: 100;
 }
+
 .text-4 {
   font-size: 2rem;
   color: rgba(19, 124, 65, 1);
 }
+
 .text-5 {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%) rotate(var(--angle)) translateY(-190px)
-    rotate(calc(-1 * var(--angle)));
+  transform: translate(-50%, -50%) rotate(var(--angle)) translateY(-260px) rotate(calc(-1 * var(--angle)));
   transform-origin: center;
 }
+
 .text-6 {
   font-size: 1.5rem;
   color: rgba(249, 241, 212, 1);
   text-shadow: 0px 0px 4px 0px rgba(168, 168, 168, 1);
 }
+
 .svg-1 {
   top: -0.5rem;
   right: -0.5rem;
 }
+
 .svg-2 {
   top: -0.7rem;
 }
+
 .svg-3 {
   top: -0.7rem;
 }
+
 .svg-4 {
   top: -1rem;
 }
+
 .svg-5 {
   right: -1rem;
 }
+
 .svg-6 {
   right: -1rem;
 }
+
 .svg-7 {
   right: -1.7rem;
 }
+
 .svg-8 {
   right: -1.5rem;
 }
+
 .svg-9 {
   top: 1rem;
   right: -1.5rem;
 }
+
 .svg-10 {
   top: 0.7rem;
   right: -1rem;
 }
+
 .svg-11 {
   top: 0.7rem;
   right: -1rem;
 }
+
 .svg-12 {
   top: 1rem;
   right: -1rem;
 }
+
 .svg-13 {
   top: 0.7rem;
   right: -1rem;
 }
+
 .svg-14 {
   top: 1rem;
 }
+
 .svg-15 {
   top: 0.8rem;
   right: -1rem;
 }
+
 .svg-16 {
   top: 0.3rem;
 }
+
 .svg-17 {
   top: 0.2rem;
 }
+
 .svg-18 {
   top: 0.5rem;
 }
+
 .svg-19 {
   top: -0.5rem;
   right: 0.5rem;
 }
+
 .svg-20 {
   top: -0.2rem;
   right: 0.3rem;
 }
+
 .svg-21 {
   top: -0.7rem;
 }
+
 .svg-22 {
   top: -0.5rem;
   right: -1rem;
 }
+
 .svg-23 {
   top: -0.7rem;
 }
+
 .svg-24 {
   top: -0.7rem;
   right: -0.5rem;
 }
+
 .poem {
   position: absolute;
   top: 50%;
@@ -549,9 +631,11 @@ video {
   opacity: 0;
   transition: opacity 1.5s ease-in-out;
 }
+
 .poem.visible {
   opacity: 1;
 }
+
 .title {
   font-family: fangfang;
   font-size: 3rem;
@@ -559,6 +643,7 @@ video {
   letter-spacing: -1.1%;
   color: rgba(255, 255, 255, 1);
 }
+
 .title-text {
   font-family: PingFang-SC-Medium;
   font-size: 1.5rem;
@@ -567,9 +652,11 @@ video {
   color: rgba(255, 255, 255, 0.8);
   text-align: center;
 }
+
 .poem-imgs {
   display: flex;
 }
+
 .poem-imgs img {
   width: 120px;
   height: 120px;
@@ -577,22 +664,126 @@ video {
   margin: 0.5rem;
   object-fit: cover;
 }
+
 .constellation {
-  scale: 0.8;
-  width: 230px;
-  height: 150px;
+  width: 120px;
+  height: 80px;
 }
+
 .constellation svg {
   width: 100%;
   height: 100%;
-  position: relative;
-  top: -0.5rem;
 }
+
+/* 麦穗装饰 */
+.wheat {
+  position: absolute;
+  bottom: 20px;
+  width: 120px;
+  height: 200px;
+  z-index: 20;
+}
+
+.wheat svg {
+  width: 100%;
+  height: 100%;
+}
+
+.wheat-left {
+  left: 50px;
+}
+
+.wheat-right {
+  right: 50px;
+}
+
+/* 中国文字区域 */
+.china-section {
+  position: absolute;
+  right: 80px;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  z-index: 25;
+}
+
+.china-text {
+  margin-top: 10px;
+}
+
+.china-title {
+  font-family: 'fangfang';
+  font-size: 3rem;
+  color: #fbf1d7;
+  font-weight: bold;
+  margin: 0;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.china-subtitle {
+  font-family: 'fangfang';
+  font-size: 1.5rem;
+  color: rgba(251, 241, 215, 0.8);
+  margin: 0.5rem 0 0 0;
+}
+
+/* 小人信息显示面板 */
+.people-info-panel {
+  position: absolute;
+  right: 80px;
+  bottom: 200px;
+  width: 300px;
+  padding: 2rem;
+  background: rgba(19, 124, 65, 0.9);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 15px;
+  color: #fbf1d7;
+  text-align: center;
+  z-index: 40;
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.people-name {
+  font-family: 'fangfang';
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.people-age {
+  font-family: 'fangfang';
+  font-size: 1.5rem;
+  color: rgba(251, 241, 215, 0.7);
+  margin-bottom: 1rem;
+}
+
+.people-story {
+  font-family: 'fangfang';
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: rgba(251, 241, 215, 0.9);
+}
+
+/* 小人激活状态 */
+.text-2.active {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 15px rgba(19, 124, 65, 0.8));
+}
+
+.text-2.active img {
+  filter: brightness(1.2);
+}
+
 .land-title-1,
 .land-title-2 {
   color: #fbf1d7;
   font-weight: 400;
 }
+
 .land-green-title {
   margin-top: 0rem;
   padding-top: 1rem;
@@ -603,20 +794,24 @@ video {
   margin-left: 8rem;
   position: absolute;
 }
+
 .land-green-title h6 {
   font-size: 2rem;
   padding: 0;
   opacity: 0.7;
   transform: translateY(-2rem);
 }
-.land-green-title > div,
-h5 + span {
+
+.land-green-title>div,
+h5+span {
   display: flex;
   align-items: center;
 }
+
 .land-green-title img {
   scale: 0.8;
 }
+
 .memory-container {
   width: 100%;
   min-height: 100vh;
@@ -648,6 +843,7 @@ h5 + span {
   0% {
     transform: translateY(-100px);
   }
+
   100% {
     transform: translateY(100vh);
   }
@@ -660,6 +856,7 @@ h5 + span {
   position: absolute;
   z-index: 20;
 }
+
 .bg-text {
   width: 100%;
   font-family: 'Ajia';
@@ -689,6 +886,7 @@ h5 + span {
   bottom: 6rem;
   z-index: 30;
 }
+
 .clickable-glass {
   width: fit-content;
   position: absolute;
@@ -703,10 +901,12 @@ h5 + span {
 }
 
 @keyframes float-animation {
+
   0%,
   100% {
     transform: translateY(0px) scale(0.8);
   }
+
   50% {
     transform: translateY(-10px) scale(0.85);
   }
@@ -728,6 +928,7 @@ h5 + span {
     opacity: 1;
     transform: translateY(0px) scale(0.8);
   }
+
   100% {
     opacity: 0;
     transform: translateY(-20px) scale(0.6);
@@ -791,25 +992,25 @@ h5 + span {
 }
 
 /*Right*/
-.items .item:hover + * {
+.items .item:hover+* {
   filter: inherit;
   transform: translateZ(calc(var(--index) * 8.5)) rotateY(35deg);
   z-index: -1;
 }
 
-.items .item:hover + * + * {
+.items .item:hover+*+* {
   filter: inherit;
   transform: translateZ(calc(var(--index) * 5.6)) rotateY(40deg);
   z-index: -2;
 }
 
-.items .item:hover + * + * + * {
+.items .item:hover+*+*+* {
   filter: inherit;
   transform: translateZ(calc(var(--index) * 2.5)) rotateY(30deg);
   z-index: -3;
 }
 
-.items .item:hover + * + * + * + * {
+.items .item:hover+*+*+*+* {
   filter: inherit;
   transform: translateZ(calc(var(--index) * 0.6)) rotateY(15deg);
   z-index: -4;
@@ -855,16 +1056,19 @@ h5 + span {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
 .pre-btn,
 .next-btn {
   cursor: pointer;
   scale: 0.8;
 }
+
 .pre-btn:hover,
 .next-btn:hover {
   scale: 0.9;
   transition: all 0.5s;
 }
+
 #pages {
   width: 50vw;
   height: 55vh;
@@ -876,6 +1080,7 @@ h5 + span {
   background-color: #dfd9d2;
   background-size: 100% 100%;
 }
+
 .video-overlay {
   background-color: rgba(0, 0, 0, 0.5);
   position: absolute;
@@ -890,17 +1095,25 @@ h5 + span {
   align-items: center;
   z-index: 200;
 }
+
 .video-overlay:hover {
   background: rgba(0, 0, 0, 0.6);
 }
 
-.play-button{
+.play-button {
   cursor: pointer;
   transition: transform 0.2s ease, opacity 0.2s ease;
   opacity: 1;
 }
 
-.play-button:hover{
+.play-button:hover {
   transform: scale(1.1);
 }
 
+.circle-4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
