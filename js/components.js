@@ -198,7 +198,7 @@ class NavbarComponent extends HTMLElement {
     .navbar ul li:hover>a,
     .navbar ul li.active>a{
       // color: #F9F1D4; 
-      color: #137C41;
+      color: #EA9797;
     }
 
     .dropdown {
@@ -237,7 +237,7 @@ class NavbarComponent extends HTMLElement {
     }
 
     .dropdown-content a:hover {
-      color: #137C41;
+      color: #EA9797;
     }
     </style>
       <nav class="navbar">

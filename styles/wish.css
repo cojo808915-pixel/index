@@ -505,7 +505,7 @@ body::-webkit-scrollbar {
 .page-4 .slogan span {
   font-family: "shangshouxingyu";
   font-size: 10rem;
-  color: #0b572da4;
+  color: #F1B389;
   font-weight: 400;
   text-align: center;
   letter-spacing: 3rem;
@@ -723,23 +723,23 @@ body::-webkit-scrollbar {
 
 .page-5 .imgs {
   .carrote {
-    width: 10%;
+    width: 15%;
     position: absolute;
-    right: 2%;
+    right: 9%;
     bottom: 0;
   }
 
   .people {
-    width: 6%;
+    width: 18%;
     position: absolute;
-    left: 20%;
+    left: 14%;
     top: -40%;
   }
 
   .rice {
     width: 10%;
     position: absolute;
-    left: 34%;
+    left: 37%;
     bottom: -3%;
   }
 }
@@ -830,7 +830,6 @@ body::-webkit-scrollbar {
 .page-7 .tips {
   position: absolute;
   font-weight: 500;
-  color: #137c41;
   font-family: fangfang;
   font-size: 6rem;
   display: flex;
@@ -842,12 +841,16 @@ body::-webkit-scrollbar {
   position: relative;
   top: 35vh;
   left: -10vw;
+  color: #85D6BB;
+  font-size: 60px;
 }
 
 .page-7 .tips .tip-top {
   position: relative;
-  top: -30vh;
+  top: -35vh;
   left: 10vw;
+  color: #69C3D7;
+  font-size: 60px;
 }
 
 .page-7 .photos {

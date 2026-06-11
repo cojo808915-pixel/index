@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
   function updateFooterTextColor(activeTitle) {
     footerText.forEach((text) => {
       if (text.textContent === activeTitle) {
-        text.style.color = '#137C41'; // 选中项的颜色
+        text.style.color = '#EA9797'; // 选中项的颜色
       } else {
         text.style.color = '#6b401d'; // 未选中项的颜色
       }

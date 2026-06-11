@@ -11,7 +11,7 @@ footer::-webkit-scrollbar {
 }
 
 footer::-webkit-scrollbar-track {
-  background: #137c41;
+  background: #EA9797;
   border-radius: 8px;
   margin: 0 35rem;
   /* 添加左右边距 调整长度 */
