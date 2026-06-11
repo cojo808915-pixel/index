@@ -461,6 +461,8 @@ video {
   font-size: 1.2rem;
   line-height: 150%;
   letter-spacing: -1.1%;
+  z-index: 100;
+  cursor: pointer;
 }
 
 .text-2 {
@@ -509,6 +511,46 @@ video {
   font-size: 1.5rem;
   color: rgba(249, 241, 212, 1);
   text-shadow: 0px 0px 4px 0px rgba(168, 168, 168, 1);
+}
+
+/* 世界和平显示框 */
+.peace-display {
+  position: absolute;
+  right: -350px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 280px;
+  height: 200px;
+  border: none;
+  border-radius: 10px;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  padding: 20px;
+}
+
+.peace-country {
+  font-family: fangfang;
+  font-size: 48px;
+  color: #F9F1D4;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.peace-text {
+  font-family: fangfang;
+  font-size: 24px;
+  color: #cdcdcd;
+  text-align: center;
+}
+
+/* 删除重复定义，已在上方.text-1中包含cursor */
+.text-1:hover {
+  color: rgba(19, 124, 65, 1);
+  transition: color 0.3s ease;
 }
 
 .svg-1 {
@@ -666,8 +708,8 @@ video {
 }
 
 .constellation {
-  width: 120px;
-  height: 80px;
+  width: 0px;
+  height: 0px;
 }
 
 .constellation svg {
@@ -725,57 +767,6 @@ video {
   font-size: 1.5rem;
   color: rgba(251, 241, 215, 0.8);
   margin: 0.5rem 0 0 0;
-}
-
-/* 小人信息显示面板 */
-.people-info-panel {
-  position: absolute;
-  right: 80px;
-  bottom: 200px;
-  width: 300px;
-  padding: 2rem;
-  background: rgba(19, 124, 65, 0.9);
-  border: 2px solid rgba(255, 255, 255, 0.3);
-  border-radius: 15px;
-  color: #fbf1d7;
-  text-align: center;
-  z-index: 40;
-  opacity: 1;
-  transform: translateY(0);
-  transition: all 0.3s ease;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-}
-
-.people-name {
-  font-family: 'fangfang';
-  font-size: 2.5rem;
-  font-weight: bold;
-  margin-bottom: 0.5rem;
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-}
-
-.people-age {
-  font-family: 'fangfang';
-  font-size: 1.5rem;
-  color: rgba(251, 241, 215, 0.7);
-  margin-bottom: 1rem;
-}
-
-.people-story {
-  font-family: 'fangfang';
-  font-size: 1.2rem;
-  line-height: 1.6;
-  color: rgba(251, 241, 215, 0.9);
-}
-
-/* 小人激活状态 */
-.text-2.active {
-  transform: scale(1.1);
-  filter: drop-shadow(0 0 15px rgba(19, 124, 65, 0.8));
-}
-
-.text-2.active img {
-  filter: brightness(1.2);
 }
 
 .land-title-1,
