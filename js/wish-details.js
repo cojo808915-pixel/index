@@ -61,150 +61,139 @@ const detailsData = {
   讯息来往: {
     today: [
       {
-        title: "农田环境监测",
-        image: "../assets/imgs/wish-detalis/watch/today/农田环境监测.png",
+        title: "实时通讯",
+        image: "../assets/imgs/wish-detalis/communication/today/1.png",
       },
       {
-        title: "农业大数据监测",
-        image: "../assets/imgs/wish-detalis/watch/today/农业大数据监测.png",
+        title: "实地览胜",
+        image: "../assets/imgs/wish-detalis/communication/today/2.png",
       },
       {
-        title: "卫星遥感检测",
-        image: "../assets/imgs/wish-detalis/watch/today/卫星遥感检测.png",
+        title: "信息速传",
+        image: "../assets/imgs/wish-detalis/communication/today/3.png",
       },
       {
-        title: "无人机监测",
-        image: "../assets/imgs/wish-detalis/watch/today/无人机监测.png",
+        title: "学术文化广播",
+        image: "../assets/imgs/wish-detalis/communication/today/4.png",
       },
       {
-        title: "遥感识别虫害",
-        image: "../assets/imgs/wish-detalis/watch/today/遥感识别虫害.png",
+        title: "面对面相会",
+        image: "../assets/imgs/wish-detalis/communication/today/5.png",
       },
     ],
     past: [
       {
-        title: "二十四节气",
-        image: "../assets/imgs/wish-detalis/watch/past/二十四节气.png",
+        title: "驿传传音",
+        image: "../assets/imgs/wish-detalis/communication/past/1.png",
       },
       {
-        title: "农谚",
-        image: "../assets/imgs/wish-detalis/watch/past/农谚.png",
+        title: "口典传俗",
+        image: "../assets/imgs/wish-detalis/communication/past/2.png",
       },
       {
-        title: "手感判断",
-        image: "../assets/imgs/wish-detalis/watch/past/手感判断.png",
+        title: "资讯迟递",
+        image: "../assets/imgs/wish-detalis/communication/past/3.png",
       },
       {
-        title: "天气变换",
-        image: "../assets/imgs/wish-detalis/watch/past/天气变换.png",
+        title: "民俗固守",
+        image: "../assets/imgs/wish-detalis/communication/past/4.png",
       },
       {
-        title: "星宿",
-        image: "../assets/imgs/wish-detalis/watch/past/星宿.png",
+        title: "赴约远行",
+        image: "../assets/imgs/wish-detalis/communication/past/5.png",
       },
     ],
   },
   资源共享: {
     today: [
       {
-        title: "机械浇灌",
-        image: "../assets/imgs/wish-detalis/water/today/机械浇灌.png",
+        title: "全域通商",
+        image: "../assets/imgs/wish-detalis/share/today/1.png",
       },
       {
-        title: "水肥一体化",
-        image: "../assets/imgs/wish-detalis/water/today/滴灌水肥一体化.png",
+        title: "物资互济",
+        image: "../assets/imgs/wish-detalis/share/today/2.png",
       },
       {
-        title: "精准施肥",
-        image: "../assets/imgs/wish-detalis/water/today/精准施肥机器.png",
+        title: "优种互通",
+        image: "../assets/imgs/wish-detalis/share/today/3.png",
       },
       {
-        title: "无人机喷洒",
-        image: "../assets/imgs/wish-detalis/water/today/无人机喷洒.png",
+        title: "技艺共学",
+        image: "../assets/imgs/wish-detalis/share/today/4.png",
       },
       {
-        title: "中心轴旋喷灌",
-        image: "../assets/imgs/wish-detalis/water/today/中心轴旋转喷灌.png",
+        title: "全域协防",
+        image: "../assets/imgs/wish-detalis/share/today/5.png",
       },
     ],
     past: [
       {
-        title: "畜粪草灰施肥",
-        image: "../assets/imgs/wish-detalis/water/past/畜粪草灰施肥.png",
+        title: "物产自足",
+        image: "../assets/imgs/wish-detalis/share/past/1.png",
       },
       {
-        title: "灌溉劳作",
-        image: "../assets/imgs/wish-detalis/water/past/灌溉劳作.png",
+        title: "本地储济",
+        image: "../assets/imgs/wish-detalis/share/past/2.png",
       },
       {
-        title: "灌溉引水",
-        image: "../assets/imgs/wish-detalis/water/past/灌溉引水.png",
+        title: "良种自留",
+        image: "../assets/imgs/wish-detalis/share/past/3.png",
       },
       {
-        title: "手撒肥料",
-        image: "../assets/imgs/wish-detalis/water/past/手撒肥料.png",
+        title: "技艺秘传",
+        image: "../assets/imgs/wish-detalis/share/past/4.png",
       },
       {
-        title: "水车灌溉",
-        image: "../assets/imgs/wish-detalis/water/past/水车灌溉.png",
+        title: "一地备防",
+        image: "../assets/imgs/wish-detalis/share/past/5.png",
       },
     ],
   },
   交流载体: {
     today: [
       {
-        title: "大型联合收割机",
-        image: "../assets/imgs/wish-detalis/tools/today/大型联合收割机.png",
+        title: "线上云端沟通",
+        image: "../assets/imgs/wish-detalis/message/today/1.png",
       },
       {
-        title: "机器人采摘",
-        image: "../assets/imgs/wish-detalis/tools/today/机器人采摘.png",
+        title: "云端出游",
+        image: "../assets/imgs/wish-detalis/message/today/2.png",
       },
       {
-        title: "农机维护车间",
-        image: "../assets/imgs/wish-detalis/tools/today/农机维护车间.png",
+        title: "艺影远播",
+        image: "../assets/imgs/wish-detalis/message/today/3.png",
       },
       {
-        title: "无人驾驶播种机",
-        image: "../assets/imgs/wish-detalis/tools/today/无人驾驶播种车.png",
+        title: "学界共聚",
+        image: "../assets/imgs/wish-detalis/message/today/4.png",
       },
       {
-        title: "智能插秧机",
-        image: "../assets/imgs/wish-detalis/tools/today/智能插秧机.png",
+        title: "研学互通",
+        image: "../assets/imgs/wish-detalis/message/today/5.png",
       },
-      {
-        title: "智能温室控制系统",
-        image: "../assets/imgs/wish-detalis/tools/today/智能温室控制系统.png",
-      },
-      {
-        title: "GPS农机导航仪",
-        image: "../assets/imgs/wish-detalis/tools/today/GPS农机导航仪.png",
-      },
+
     ],
     past: [
       {
-        title: "耕牛犁地",
-        image: "../assets/imgs/wish-detalis/tools/past/耕牛犁地.png",
+        title: "车马远行",
+        image: "../assets/imgs/wish-detalis/message/past/1.png",
       },
       {
-        title: "背篓运输",
-        image: "../assets/imgs/wish-detalis/tools/past/背篓运输.png",
+        title: "徒步游历",
+        image: "../assets/imgs/wish-detalis/message/past/2.png",
       },
       {
-        title: "手工插秧",
-        image: "../assets/imgs/wish-detalis/tools/past/手工插秧.png",
+        title: "戏台献艺",
+        image: "../assets/imgs/wish-detalis/message/past/3.png",
       },
       {
-        title: "镰刀收割",
-        image: "../assets/imgs/wish-detalis/tools/past/镰刀收割.png",
+        title: "书院论学",
+        image: "../assets/imgs/wish-detalis/message/past/4.png",
       },
       {
-        title: "木锄劳作",
-        image: "../assets/imgs/wish-detalis/tools/past/木锄劳作.png",
-      },
-      {
-        title: "人工打谷",
-        image: "../assets/imgs/wish-detalis/tools/past/人工打谷.png",
+        title: "远赴求学",
+        image: "../assets/imgs/wish-detalis/message/past/5.png",
       },
     ],
   },
@@ -366,7 +355,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const subtitles = [
       "多年奔走多国开展民间文化沙龙，用美术创作传递包容共处的理念，被地方侨联专题报道表彰，以点滴耕耘浇灌跨国友好，契合静待繁花盛放的意境。 ",
       "汇聚中国、巴基斯坦、肯尼亚、泰国等11国普通志愿者，常年开展非遗互鉴、跨国青少年研学、公益科普活动，全年数百场文化交流志愿活动，面向海内外普及包容共处的和平理念",
-      "秘鲁知名翻译家、汉学家，被国家领导人在外事演讲中点名表扬。大半辈子扎根中国，翻译上百部中国典籍、拍摄中华文化纪录片，常年往返中秘两国讲学，用书本文字打通拉美与中国的文明纽带，消除地域隔阂、拉近民心，一辈子深耕跨文明和睦事业，是民间友好和平代表",
+      "秘鲁知名翻译家、汉学家。大半辈子扎根中国，翻译上百部中国典籍、拍摄中华文化纪录片，常年往返中秘两国讲学，用书本文字打通拉美与中国的文明纽带，是民间友好和平代表",
     ];
     function updateContent() {
       title.textContent = titles[currentIndex];
