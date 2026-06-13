@@ -1396,12 +1396,25 @@ class RotatingBoxes extends HTMLElement {
           transition: color 0.3s ease;
         }
 
-        .scroll-text > p:hover {
-          color: #137C41;
+        .scroll-text > p:nth-child(1):hover { color: #FBD374; }
+        .scroll-text > p:nth-child(2):hover { color: #E76F6D; }
+        .scroll-text > p:nth-child(3):hover { color: #5590C4; }
+        .scroll-text > p:nth-child(4):hover { color: #5E7793; }
+
+        .scroll-text > p.active:nth-child(1) {
+          color: #FBD374;
         }
 
-        .scroll-text > p.active {
-          color: #137C41;
+        .scroll-text > p.active:nth-child(2) {
+          color: #E76F6D;
+        }
+
+        .scroll-text > p.active:nth-child(3) {
+          color: #5590C4;
+        }
+
+        .scroll-text > p.active:nth-child(4) {
+          color: #5E7793;
         }
 
         .scroll-text > p:nth-child(3) {
@@ -1519,8 +1532,8 @@ class RotatingBoxes extends HTMLElement {
 
         .time p {
           border-radius: 22px;
-          background: #137C41;
-          color: #F9F1D4;
+          background: #FBD374;
+          color: #462204;
           font-family: STZhongsong;
           font-size: 1.5rem;
           line-height: 123%;
