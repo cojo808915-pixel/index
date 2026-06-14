@@ -711,6 +711,7 @@ class AgriculturalChangeComponent extends HTMLElement {
           <div class="scroll-flat">
            
 
+
 <svg width="968" height="65" viewBox="0 0 968 65" fill="none" xmlns="http://www.w3.org/2000/svg">
 
 <circle cx="32" cy="32" r="32" fill="#FBD374"/>
@@ -792,6 +793,8 @@ class AgriculturalChangeComponent extends HTMLElement {
 </linearGradient>
 </defs>
 </svg>
+
+
     </div>
             <div class='flat-detail'>
             <div class="flat-text"><span class="tong">同化安定</span><span class="jun">均势协商</span><span class="quan">全球共治</span><span class="yong">永续共建</span></div>
