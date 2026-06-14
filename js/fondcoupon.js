@@ -77,13 +77,6 @@ function initCardBoxes() {
       modal.classList.add('active');
     });
 
-    // 设置初始z-index，使先发的牌在上面
-    if (index === 2) {
-      box.style.zIndex == 1;
-    } else {
-      box.style.zIndex = cardCount - index;
-    }
-
     // 添加鼠标悬停事件
     box.addEventListener('mouseenter', (e) => {
       tooltip.textContent = `点击`;
@@ -104,55 +97,9 @@ function initCardBoxes() {
   });
 }
 
-// 发牌动画
-function dealCards() {
-  carBoxes.forEach((box, index) => {
-    // 计算目标位置
-    const row = Math.floor(index / cardPerRow);
-    const col = index % cardPerRow;
-
-    setTimeout(() => {
-      // 添加晃动动画
-      box.classList.add('dealing');
-
-      // 延迟一下再发牌
-      setTimeout(() => {
-        // 移除晃动动画
-        box.classList.remove('dealing');
-        // 添加dealt类触发发牌动画
-        box.classList.add('dealt');
-      }, 100); // 晃动0.1秒后发牌
-    }, index * 100); // 每张卡片间隔100ms
-  });
-}
-
 // 初始化
 function init() {
   initCardBoxes();
-
-  // 添加文字动画
-  // if (descriptionText) {
-  //   const originalText = descriptionText.textContent;
-  //   typeWriter(descriptionText, originalText, 100);
-  // }
-
-  // 创建 Intersection Observer
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          // 延迟一下再开始发牌，确保DOM已经准备好
-          setTimeout(dealCards, 100);
-          observer.unobserve(entry.target);
-        }
-      });
-    },
-    {
-      threshold: 0.1,
-    }
-  );
-
-  observer.observe(cardContainer);
 }
 
 // 页面加载完成后初始化

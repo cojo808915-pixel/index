@@ -246,7 +246,7 @@ document.addEventListener('DOMContentLoaded', function () {
       ],
     },
     {
-      title: '捍卫民族尊严的禁烟先——林则徐',
+      title: '捍卫民族尊严的禁烟先驱——林则徐',
       content: [
         '晚清著名政治家、民族英雄，主持虎门销烟，严厉打击鸦片贸易以挽救国民与国家；积极放眼世界、翻译西书编撰《四洲志》，',
         '是近代中国 “开眼看世界第一人”，坚决抵御外来侵略，守护华夏疆土与百姓生计。',
@@ -446,9 +446,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // ========== 节气诗歌数据 ==========
   const solarTermData = {
-    立春: {
-      title: '不丹',
-      content: ['འཛམ་གླིང་བདེ་སྐྱིད།'],
+    中国: {
+      title: '中国',
+      content: ['世界和平'],
 
       imgs: [
         '../assets/imgs/coexistence/solar-term/spring1-1.png',
@@ -481,8 +481,8 @@ document.addEventListener('DOMContentLoaded', function () {
         '</defs>\n' +
         '</svg>\n',
     },
-    雨水: {
-      title: '雨水',
+    巴基斯坦: {
+      title: '巴基斯坦',
       content: ['春雨润物，解冻开耕。', '播种春小麦、早蔬。'],
       imgs: [
         '../assets/imgs/coexistence/solar-term/spring2-1.png',
@@ -519,8 +519,8 @@ document.addEventListener('DOMContentLoaded', function () {
         '</defs>\n' +
         '</svg>\n',
     },
-    惊蛰: {
-      title: '惊蛰',
+    印度: {
+      title: '印度',
       content: ['万物苏醒，农事繁忙。', '整地育秧、治虫施肥。'],
       imgs: [
         '../assets/imgs/coexistence/solar-term/spring3-1.png',
@@ -1305,9 +1305,9 @@ document.addEventListener('DOMContentLoaded', function () {
         '</defs>\n' +
         '</svg>\n',
     },
-    小寒: {
-      title: '小寒',
-      content: ['小寒料峭，寒中有备。', '畜禽防冻，温室育苗。'],
+    美国: {
+      title: '美国',
+      content: ['World peace'],
       imgs: [
         '../assets/imgs/coexistence/solar-term/winter5-1.png',
         '../assets/imgs/coexistence/solar-term/winter5-2.png',
