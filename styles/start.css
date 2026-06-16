@@ -15,11 +15,13 @@ body {
   transform: translate(-50%, -50%);
   z-index: 999;
   font-family: logo-name;
+
   /* filter: contrast(30); */
   span {
     font-size: 15rem;
   }
 }
+
 .title2 {
   position: absolute;
   top: 63%;
@@ -29,12 +31,13 @@ body {
   font-family: logo-name;
   /* filter: contrast(30); */
   font-size: 4rem;
-  color: rgba(136,93,74,1.00);
+  color: rgba(136, 93, 74, 1.00);
   display: flex;
   align-items: center;
   width: 100%;
   justify-content: center;
 }
+
 .title2 span {
   padding: 0 15px;
   /* 如果你的背景是纯色，加上下面这行可以盖住横线，效果更干净 */
@@ -46,22 +49,30 @@ body {
 .title2::after {
   content: '';
   flex: 1;
-  height: 2px; /* 横线粗细，可自定义 */
-  background: rgba(136,93,74,1.00); /* 横线颜色和文字保持一致 */
-  max-width: 70px; /* 控制横线最大长度，避免太宽 */
+  height: 2px;
+  /* 横线粗细，可自定义 */
+  background: rgba(136, 93, 74, 1.00);
+  /* 横线颜色和文字保持一致 */
+  max-width: 70px;
+  /* 控制横线最大长度，避免太宽 */
 }
-.n1{
-	color: rgba(166,25,24,1.00);
+
+.n1 {
+  color: rgba(166, 25, 24, 1.00);
 }
-.n2{
-	color: rgba(250,148,104,1.00);
+
+.n2 {
+  color: rgba(250, 148, 104, 1.00);
 }
-.n3{
-	color: rgba(244,194,87,1.00);
+
+.n3 {
+  color: rgba(244, 194, 87, 1.00);
 }
-.n4{
-	color: rgba(116,185,243,1.00);
+
+.n4 {
+  color: rgba(116, 185, 243, 1.00);
 }
+
 .ani-title {
   animation: ani-title 1.5s linear forwards;
 }
@@ -84,6 +95,7 @@ body {
   z-index: 10;
   animation: carmove 20s linear infinite;
 }
+
 .rice {
   position: absolute;
   top: 15%;
@@ -179,25 +191,26 @@ g {
 
 .tree1 {
   width: 85%;
-  translate: -44% -22%;
-  transform: rotate(180deg);
+  translate: -30% -34%;
+  transform: rotate(0deg);
 }
 
 .tree2 {
   width: 80%;
-  translate: 48% -38%;
-  transform: rotate(-90deg);
+  translate: 38% -28%;
+  transform: rotate(150deg);
 }
 
 .tree3 {
-  translate: -45% 29%;
-  transform: scaleX(-1) rotate(-5deg);
+  translate: -55% 49%;
+  transform: scaleX(-1) rotate(-21deg);
 }
 
 .tree4 {
-  translate: 46% 25%;
-  transform: rotate(-10deg);
+  translate: 48% 54%;
+  transform: rotate(-1deg);
 }
+
 .yellow-cover {
   width: 100%;
   z-index: 999;
@@ -212,6 +225,7 @@ g {
   cursor: pointer;
   /* scale: 1.1; */
 }
+
 .start-text {
   position: absolute;
   left: 50%;
@@ -222,6 +236,7 @@ g {
   cursor: pointer;
   /* scale: 1.1; */
 }
+
 /* 动画 */
 @keyframes swing {
   0% {
@@ -246,24 +261,30 @@ g {
     transform: translateY(-30px) translateY(-10px) rotate(-20deg);
   }
 }
+
 @keyframes carmove {
   0% {
     transform: translateX(0) scaleX(1);
   }
+
   50% {
     transform: translateX(95vw) scaleX(1);
   }
+
   51% {
     transform: translateX(95vw) scaleX(-1);
   }
+
   100% {
     transform: translateX(0) scaleX(-1);
   }
 }
+
 @keyframes ani-title {
   from {
     opacity: 1;
   }
+
   to {
     opacity: 0;
 
@@ -275,10 +296,12 @@ g {
 .disappear {
   animation: disappear 1s linear forwards !important;
 }
+
 @keyframes disappear {
   from {
     opacity: 1;
   }
+
   to {
     opacity: 0;
   }
@@ -307,6 +330,7 @@ g {
   0% {
     transform: translateY(-100px);
   }
+
   100% {
     transform: translateY(100vh);
   }

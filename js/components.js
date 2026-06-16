@@ -899,6 +899,7 @@ class PlowDetailItem extends HTMLElement {
           height: 100%;
           left: 50%;
           transform: translateX(-54%);
+          margin-left: 200px;
         }
       </style>
 
