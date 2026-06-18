@@ -913,6 +913,7 @@ class PlowDetailItem extends HTMLElement {
         </div>
         <div class="plow-item-middle">
          <!-- 线条 -->
+         <!--
       <svg
         class="line-svg"
         width="811"
@@ -977,6 +978,7 @@ class PlowDetailItem extends HTMLElement {
           stroke="#137C41"
           stroke-width="4" />
       </svg>
+      -->
           <p class="plow-item-middle-title">《${title}》</p>
           <img src="${image}" alt="${title}" />
         </div>
