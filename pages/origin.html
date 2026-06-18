@@ -54,10 +54,21 @@
       <header>
         <img src="../assets/imgs/origin/sun-1.svg" alt="" />
         <img src="../assets/imgs/origin/sun-2.svg" alt="" />
-        <video autoplay loop muted preload="auto" poster="../assets/imgs/origin/bg-1.webp"
-          style="margin-top: 5rem; width: 110%;">
+        <video id="originVideo" autoplay loop muted preload="auto" poster="../assets/imgs/origin/img-first.webp"
+          style="margin-top: 5rem; width: 100%;">
           <source src="../assets/video/origin.MP4" type="video/mp4" />
         </video>
+        <script>
+          // 视频开始播放后将宽度改为110%
+          const video = document.getElementById('originVideo');
+          video.addEventListener('play', function () {
+            this.style.width = '110%';
+          });
+          // 如果视频已经在播放（autoplay），立即修改宽度
+          if (!video.paused) {
+            video.style.width = '110%';
+          }
+        </script>
       </header>
       <!-- main -->
       <div class="main-bg">
